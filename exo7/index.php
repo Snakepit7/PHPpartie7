@@ -14,7 +14,7 @@
       //Si civi, lastName et fisrtName est rempli...
         if(!isset($_POST['civi']) && !isset($_POST['lastName']) && !isset($_POST['firstName']) && !isset($_POST['fileButton'])){
       ?>
-      <form method="post" action="index.php">
+      <form method="post" action="index.php" enctype="multipart/form-data">
           <label for="civi"> Civilité: </label>
           <!-- Menu déroulant -->
           <select name="civi" size="1">
@@ -23,11 +23,11 @@
               <option> Mlle.</option>
           </select><br />
           <label for="lastName"> Nom : </label>
-          <input type="text" name="lastName" /><br />
+          <input type="text" name="lastName" required/><br />
           <label for="fisrtName"> Prénom : </label>
-          <input type="text" name="firstName" /><br />
+          <input type="text" name="firstName" required/><br />
           <!-- boutton "file" pour envoyer des fichiers -->
-          <input type="file" name="fileButton" /><br />
+          <input type="file" name="fileButton" required/><br />
           <input type="submit" value="Envoyer !" />
       </form>
       <?php

@@ -10,6 +10,7 @@
           <h1 class="text">PHP partie 7 - Exo 1 :</h1>
       </div>
       <?php
+       //méthode GET
        echo (isset($_GET['lastName']) ? htmlentities($_GET['lastName']) : 'Le nom est introuvable') . ' '; 
        echo (isset($_GET['firstName']) ? htmlentities($_GET['firstName']) : 'Le prénom est introuvable');
       ?>

@@ -9,6 +9,7 @@
       <div class="background">
           <h1 class="text">PHP partie 7 - Exo 1 :</h1>
       </div>
+      <!-- Formulaire -->
       <form method="get" action="user.php">
           <label for="lastName"> Nom : </label>
           <input type="text" name="lastName" />
@@ -16,8 +17,5 @@
           <input type="text" name="firstName" />
           <input type="submit" value="Envoyer !" />
       </form>
-      <?php
-        
-      ?>
   </body>
 </html>

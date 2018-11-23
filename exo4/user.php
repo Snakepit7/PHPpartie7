@@ -10,6 +10,7 @@
           <h1 class="text">PHP partie 7 - Exo 4 :</h1>
       </div>
       <?php
+       // Untilisation de la méthode POST
        echo (isset($_POST['lastName']) ? htmlentities($_POST['lastName']) : 'Le nom est introuvable') . ' '; 
        echo (isset($_POST['firstName']) ? htmlentities($_POST['firstName']) : 'Le prénom est introuvable');
       ?>

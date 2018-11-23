@@ -19,9 +19,9 @@
               <option> Mlle.</option>
           </select><br />
           <label for="lastName"> Nom : </label>
-          <input type="text" name="lastName" /><br />
+          <input type="text" name="lastName" required/><br />
           <label for="fisrtName"> Prénom : </label>
-          <input type="text" name="firstName" /><br />
+          <input type="text" name="firstName" required/><br />
           <input type="submit" value="Envoyer !" />
       </form>
       <?php
